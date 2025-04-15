@@ -1,6 +1,6 @@
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
+
 import { useState } from "react";
 
 const Register = () => {
@@ -262,7 +262,6 @@ const Register = () => {
         </div>
       </section>
       
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 import { Calendar, Users, Target, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner";

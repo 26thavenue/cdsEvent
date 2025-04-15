@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import { MapPin, Phone, Globe, Clock, Car, Plane } from "lucide-react";
+import { MapPin, Car, Plane } from "lucide-react";
 import Banner from '../components/Banner';
 
 
 
 const ImageSlider = () => {
   const containerRef = useRef(null)
-  const slideRefs = useRef([])
-
+  const slideRefs = useRef<(HTMLDivElement | null)[]>([])
   const images=[
     "uururu",
     "uururu",
@@ -42,7 +41,9 @@ const ImageSlider = () => {
         {images.map((_, i) => (
           <div
             key={i}
-            ref={(el) => (slideRefs.current[i] = el)}
+           ref={(el) => {
+              slideRefs.current[i] = el
+            }}
             className="w-[700px] h-[300px] flex-shrink-0 overflow-hidden relative bg-green-50 rounded-xl"
             style={{
               transition: 'all 0.5s ease-in-out',
@@ -114,26 +115,26 @@ The summit will utilize the hotel's extensive conference facilities, including t
             {/* From Airport */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="bg-navy-light p-3 rounded-full mr-4">
+                <div className="bg-primary-light p-3 rounded-full mr-4">
                   <Plane size={24} className="text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-navy-dark">From Nnamdi Azikiwe International Airport</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
                   <span>Distance: Approximately 40 km (25 miles)</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
                   <span>Travel Time: About 30-45 minutes depending on traffic</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
                   <span>Official summit transportation will be provided for delegates</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
                   <span>Taxis and ride-sharing services are also available</span>
                 </li>
               </ul>
@@ -142,26 +143,26 @@ The summit will utilize the hotel's extensive conference facilities, including t
             {/* By Car */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="bg-navy-light p-3 rounded-full mr-4">
+                <div className="bg-primary-light p-3 rounded-full mr-4">
                   <Car size={24} className="text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-navy-dark">By Car</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
                   <span>Located in the central district of Abuja</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
                   <span>Accessible via Aguiyi Ironsi Street</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
                   <span>Complimentary parking available for summit delegates</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
                   <span>Security protocols will be in place for all vehicles</span>
                 </li>
               </ul>
@@ -170,26 +171,26 @@ The summit will utilize the hotel's extensive conference facilities, including t
             {/* Local Transportation */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="bg-navy-light p-3 rounded-full mr-4">
+                <div className="bg-primary-light p-3 rounded-full mr-4">
                   <MapPin size={24} className="text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-navy-dark">Local Information</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">1</span>
                   <span>5-10 minutes from major government buildings</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">2</span>
                   <span>Close to diplomatic zones and embassies</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">3</span>
                   <span>Shuttle services available throughout the summit</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="bg-navy text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
+                  <span className="bg-primary text-white text-xs font-medium h-5 w-5 rounded-full flex items-center justify-center mt-1 mr-3">4</span>
                   <span>Security escort available for officials upon request</span>
                 </li>
               </ul>

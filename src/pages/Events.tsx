@@ -53,64 +53,64 @@ const Events = () => {
         </button>
       </section>
 
-       <section className="py-16 bg-white">
+       <section className="py-16 bg-white my-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary mb-10 text-center">
             Summit Schedule
           </h2>
           
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-8 ">
             {/* Day 1 */}
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="bg-navy p-4">
+              <div className="bg-primary p-4">
                 <div className="flex items-center">
-                  <CalendarDays size={20} className="text-gold-light mr-2" />
-                  <h3 className="text-xl font-semibold ">Day 1 - July 9, 2025</h3>
+                  <CalendarDays size={20} className="text-yellow-500  mr-2" />
+                  <h3 className="text-xl font-semibold text-yellow-500 ">Day 1 - July 9, 2025</h3>
                 </div>
               </div>
               <div className="p-6 space-y-4">
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     08:00 AM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Registration and Welcome</p>
+                    <p className="font-medium text-primary">Registration and Welcome</p>
                     <p className="text-gray-600 text-sm">Transcorp Hotel Main Hall</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     09:30 AM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Opening Ceremony</p>
+                    <p className="font-medium text-primary">Opening Ceremony</p>
                     <p className="text-gray-600 text-sm">Presidential Address and Keynote Speeches</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     12:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Lunch Break</p>
+                    <p className="font-medium text-primary">Lunch Break</p>
                     <p className="text-gray-600 text-sm">Networking Opportunity</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     02:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Plenary Session: Regional Security Challenges</p>
+                    <p className="font-medium text-primary">Plenary Session: Regional Security Challenges</p>
                     <p className="text-gray-600 text-sm">Panel Discussion with Regional Representatives</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     05:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Welcome Reception</p>
+                    <p className="font-medium text-primary">Welcome Reception</p>
                     <p className="text-gray-600 text-sm">Hosted by the Chief of Defense Staff</p>
                   </div>
                 </div>
@@ -119,55 +119,55 @@ const Events = () => {
             
             {/* Day 2 */}
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="bg-navy p-4">
+              <div className="bg-primary p-4">
                 <div className="flex items-center">
-                  <CalendarDays size={20} className="text-gold-light mr-2" />
-                  <h3 className="text-xl font-semibold ">Day 2 - July 10, 2025</h3>
+                  <CalendarDays size={20} className="text-yellow-500  mr-2" />
+                  <h3 className="text-xl font-semibold text-yellow-500 ">Day 2 - July 10, 2025</h3>
                 </div>
               </div>
               <div className="p-6 space-y-4">
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     09:00 AM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Thematic Workshops (Parallel Sessions)</p>
+                    <p className="font-medium text-primary">Thematic Workshops (Parallel Sessions)</p>
                     <p className="text-gray-600 text-sm">Counter-Terrorism, Peacekeeping, Maritime Security</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     12:30 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Lunch Break</p>
+                    <p className="font-medium text-primary">Lunch Break</p>
                     <p className="text-gray-600 text-sm">Regional Coordination Meetings</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     02:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Technology Exhibition</p>
+                    <p className="font-medium text-primary">Technology Exhibition</p>
                     <p className="text-gray-600 text-sm">Defense Innovation Showcase</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     04:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Strategic Planning Session</p>
+                    <p className="font-medium text-primary">Strategic Planning Session</p>
                     <p className="text-gray-600 text-sm">Continental Defense Coordination</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     07:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Gala Dinner</p>
+                    <p className="font-medium text-primary">Gala Dinner</p>
                     <p className="text-gray-600 text-sm">Cultural Performances and Networking</p>
                   </div>
                 </div>
@@ -176,54 +176,54 @@ const Events = () => {
             
             {/* Day 3 */}
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="bg-navy p-4">
+              <div className="bg-primary p-4">
                 <div className="flex items-center">
-                  <CalendarDays size={20} className="text-gold-light mr-2" />
-                  <h3 className="text-xl font-semibold ">Day 3 - July 11, 2025</h3>
+                  <CalendarDays size={20} className="text-yellow-500 mr-2" />
+                  <h3 className="text-xl font-semibold text-yellow-500 ">Day 3 - July 11, 2025</h3>
                 </div>
               </div>
               <div className="p-6 space-y-4">
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     09:00 AM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Final Plenary Session</p>
+                    <p className="font-medium text-primary">Final Plenary Session</p>
                     <p className="text-gray-600 text-sm">Summary of Workshops and Recommendations</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     11:30 AM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Adoption of Summit Declaration</p>
+                    <p className="font-medium text-primary">Adoption of Summit Declaration</p>
                     <p className="text-gray-600 text-sm">Official Communiqué</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     12:30 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Lunch Break</p>
+                    <p className="font-medium text-primary">Lunch Break</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     02:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Closing Ceremony</p>
+                    <p className="font-medium text-primary">Closing Ceremony</p>
                     <p className="text-gray-600 text-sm">Remarks and Next Steps</p>
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="w-24 flex-shrink-0 text-navy-dark font-semibold">
+                  <div className="w-24 flex-shrink-0 text-primary font-semibold">
                     04:00 PM
                   </div>
                   <div>
-                    <p className="font-medium text-navy-dark">Press Conference</p>
+                    <p className="font-medium text-primary">Press Conference</p>
                     <p className="text-gray-600 text-sm">Summit Outcomes and Achievements</p>
                   </div>
                 </div>
@@ -241,10 +241,10 @@ const Events = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-navy-light p-6 rounded-lg">
+            <div className="bg-yellow-600 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <div className=" h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Target size={20} className="text-navy-dark" />
+                  <Target size={20} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gold-light">Strategic Coordination</h3>
               </div>
@@ -253,10 +253,10 @@ const Events = () => {
               </p>
             </div>
             
-            <div className="bg-navy-light p-6 rounded-lg">
+            <div className="bg-yellow-600 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Users size={20} className="text-navy-dark" />
+                  <Users size={20} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gold-light">Capacity Building</h3>
               </div>
@@ -265,10 +265,10 @@ const Events = () => {
               </p>
             </div>
             
-            <div className="bg-navy-light p-6 rounded-lg">
+            <div className="bg-yellow-600 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <FileText size={20} className="text-navy-dark" />
+                  <FileText size={20} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gold-light">Policy Development</h3>
               </div>
@@ -276,11 +276,11 @@ const Events = () => {
                 Develop comprehensive continental defense policies that address emerging threats while respecting sovereignty and promoting regional integration.
               </p>
             </div>
-            
-            <div className="bg-navy-light p-6 rounded-lg">
+
+            <div className="bg-yellow-600 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Clock size={20} className="text-navy-dark" />
+                  <Clock size={20} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gold-light">Sustainable Security</h3>
               </div>
@@ -302,7 +302,7 @@ const Events = () => {
       {/* CDS Statement */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-navy-dark mb-10 text-center">
+          <h2 className="text-3xl font-bold text-primary mb-10 text-center">
             Statement from the Chief of Defense Staff
           </h2>
           
@@ -312,7 +312,7 @@ const Events = () => {
                 <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5')] bg-cover bg-center"></div>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-navy-dark mb-2">
+                <h3 className="text-2xl font-semibold text-primary mb-2">
                   General Samuel Olatunde
                 </h3>
                 <p className="text-gray-600 mb-4">Chief of Defense Staff, Federal Republic of Nigeria</p>
