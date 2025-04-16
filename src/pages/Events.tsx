@@ -5,7 +5,7 @@ const Events = () => {
   return (
     <main className='mb-16 '>
 
-         <div className="bg-primary py-16 md:py-24 mb-16">
+      <div className="bg-primary py-16 md:py-24 mb-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Event <span className="text-gold-light">Location</span>

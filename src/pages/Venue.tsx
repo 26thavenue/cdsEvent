@@ -199,6 +199,90 @@ The summit will utilize the hotel's extensive conference facilities, including t
         </div>
       </section>
 
+      <section className="py-16 bg-white p-8 lg:px-24">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-navy-dark mb-10 text-center">
+            About Abuja
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="prose max-w-none text-gray-700">
+                <p className="mb-4">
+                  As the capital city of Nigeria, Abuja is a planned modern city located in the center of the country. Designed in the 1980s and officially becoming Nigeria's capital in 1991, it represents one of Africa's most organized urban centers.
+                </p>
+                <p className="mb-4">
+                  Abuja features a unique blend of modern architecture, carefully planned districts, and natural landscapes. The city is home to numerous government buildings, diplomatic missions, cultural landmarks, and business centers.
+                </p>
+                <p>
+                  With its central location within Nigeria and excellent international connections through the Nnamdi Azikiwe International Airport, Abuja serves as an ideal host city for continental gatherings like the African Chiefs of Defense Staff Summit.
+                </p>
+              </div>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold text-navy-dark mb-4">Notable Landmarks Near the Venue</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Aso Rock Presidential Villa
+                  </li>
+                  <li className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    National Assembly Complex
+                  </li>
+                  <li className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Defense Headquarters
+                  </li>
+                  <li className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Abuja National Mosque
+                  </li>
+                  <li className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    National Christian Centre
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-lg overflow-hidden h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" 
+                  alt="Abuja Cityscape" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" 
+                  alt="Abuja National Mosque" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden h-48 col-span-2">
+                <img 
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945" 
+                  alt="Abuja Cityscape" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Banner/>
 
        

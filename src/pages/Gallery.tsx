@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import Banner from "../components/Banner";
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -222,7 +223,7 @@ const Gallery = () => {
       
      
       
-     
+     <Banner/>
     </div>
   );
 };
