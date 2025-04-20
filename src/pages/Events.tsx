@@ -1,4 +1,4 @@
-import { CalendarDays,Target,Users,FileText,Clock } from "lucide-react"
+import { CalendarDays} from "lucide-react"
 import Banner from "../components/Banner"
 
 const Events = () => {
@@ -8,7 +8,7 @@ const Events = () => {
       <div className="bg-primary py-16 md:py-24 mb-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Event <span className="text-gold-light">Location</span>
+            Event <span className="text-gold-light">Details</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Transcorp Hilton Hotel, Abuja, Nigeria
@@ -233,71 +233,7 @@ const Events = () => {
         </div>
       </section>
       
-      {/* Objectives Section */}
-      <section className="py-16 bg-primary text-white ">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-white mb-10 text-center">
-            Summit Objectives
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-yellow-600 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className=" h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Target size={20} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-gold-light">Strategic Coordination</h3>
-              </div>
-              <p>
-                Enhance coordination mechanisms among African defense forces to respond effectively to transnational security challenges and conflicts.
-              </p>
-            </div>
-            
-            <div className="bg-yellow-600 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Users size={20} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-gold-light">Capacity Building</h3>
-              </div>
-              <p>
-                Strengthen the operational capabilities of African defense institutions through knowledge sharing, joint training initiatives, and resource mobilization.
-              </p>
-            </div>
-            
-            <div className="bg-yellow-600 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <FileText size={20} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-gold-light">Policy Development</h3>
-              </div>
-              <p>
-                Develop comprehensive continental defense policies that address emerging threats while respecting sovereignty and promoting regional integration.
-              </p>
-            </div>
-
-            <div className="bg-yellow-600 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="bg-gold h-10 w-10 rounded-full flex items-center justify-center mr-4">
-                  <Clock size={20} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-gold-light">Sustainable Security</h3>
-              </div>
-              <p>
-                Foster partnerships for sustainable security solutions that address root causes of conflicts, promote peace, and support development across the continent.
-              </p>
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <p className="text-xl font-light max-w-3xl mx-auto">
-              "The security of our continent requires coordinated effort, shared vision, and combined resources. Together, we stand stronger."
-            </p>
-            <p className="mt-4 text-gold-light">- Chief of Defense Staff, Opening Statement</p>
-          </div>
-        </div>
-      </section>
+      
       
       {/* CDS Statement */}
       <section className="py-16 bg-gray-100">
@@ -309,7 +245,7 @@ const Events = () => {
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="mb-8 flex flex-col md:flex-row gap-8 items-center">
               <div className="w-48 h-48 bg-gray-300 rounded-full overflow-hidden flex-shrink-0">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5')] bg-cover bg-center"></div>
+                <div className="w-full h-full bg-[url('https://africacdssummit.com/wp-content/uploads/2025/03/image006.png')] bg-cover bg-center"></div>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-2">

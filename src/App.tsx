@@ -7,6 +7,7 @@ import Events from './pages/Events';
 import Venue from './pages/Venue';
 import Gallery from "./pages/Gallery"
 import Register from "./pages/Register"
+import Admin from "./pages/AdminPortal"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/venue" element={<Venue />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/admin" element={<Admin />} />
                   
                 </Route>
 

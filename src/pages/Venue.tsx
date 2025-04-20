@@ -9,15 +9,13 @@ const ImageSlider = () => {
   const containerRef = useRef(null)
   const slideRefs = useRef<(HTMLDivElement | null)[]>([])
   const images=[
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
-    "uururu",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2022/12/HHC_6876.jpg?fit=1500%2C1001&amp;ssl=1",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2021/05/ABUHI_0317.jpg?fit=1199%2C786&ssl=1",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2025/04/IMG_7487.jpeg?fit=1170%2C821&ssl=1",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2025/04/Transcorp_eventcenter-4-scaled.jpg?fit=2560%2C1707&ssl=1",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2024/08/ABUHI_1050-2.jpg?fit=1198%2C632&ssl=1",
+    "https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2025/01/PANO0001-Edit-2-4-copy-scaled.jpg?fit=2048%2C2560&ssl=1",
+
   ]
 
   useEffect(() => {
@@ -38,17 +36,18 @@ const ImageSlider = () => {
         className="flex gap-4"
         style={{ width: `${images.length * 340}px` }}
       >
-        {images.map((_, i) => (
+        {images.map((k, i) => (
           <div
             key={i}
            ref={(el) => {
               slideRefs.current[i] = el
             }}
-            className="w-[700px] h-[300px] flex-shrink-0 overflow-hidden relative bg-green-50 rounded-xl"
+            className="w-[100dvw] lg:w-[700px] h-[300px] lg:h-[500px] flex-shrink-0 overflow-hidden relative bg-green-50 rounded-xl"
             style={{
               transition: 'all 0.5s ease-in-out',
             }}
           >
+            <img loading="lazy" src={k} alt="Trnascorp Hotel" className="w-full h-full object-cover"/>
             
           </div>
         ))}
@@ -66,20 +65,22 @@ const Venue = () => {
     <main className=''>
        <div className="bg-primary py-16 md:py-24 mb-16">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Event <span className="text-gold-light">Location</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-l lg:text-xl text-gray-300 max-w-3xl mx-auto">
             Transcorp Hilton Hotel, Abuja, Nigeria
           </p>
         </div>
       </div>
-         <div className='bg-green-200 h-[70dvh] w-[90dvw] mx-auto rounded-3xl'>
 
-        </div>
-
+          <img 
+              className="h-[400px] lg:h-[70dvh] w-[90dvw] mx-auto rounded-3xl object-cover"
+              loading="lazy" 
+              src="https://i0.wp.com/www.transcorphotels.com/wp-content/uploads/2022/12/HHC_6876.jpg?fit=1500%2C1001&amp;ssl=1"  alt="" />
+       
          <div className="my-16 px-8 lg:px-24 ">
-            <h2 className="text-3xl font-bold mb-4">Venue: Transcorp Hotels</h2>
+            <h2 className="text-3xl font-bold mb-4">Transcorp Hotels</h2>
       <p className="mb-6">
         Transcorp Hotels Plc is one of Nigeria’s leading hospitality companies, known for delivering
         excellent guest experiences and world-class service. It is a subsidiary of Transnational Corporation
