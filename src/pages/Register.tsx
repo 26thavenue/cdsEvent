@@ -5,7 +5,7 @@ import supabase from "../utils";
 const Register = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [delgeateOption, setDelegateOption] = useState<string>("");
-  const [ setFormData] = useState<any>(null);
+  // const [ setFormData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
@@ -20,7 +20,7 @@ const Register = () => {
     const data = Object.fromEntries(formData.entries());
 
     console.log("Form submission data:", data);
-    setFormData(data);
+    // setFormData(data);
 
     try {
       // Insert into Supabase
