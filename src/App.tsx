@@ -8,11 +8,15 @@ import Venue from './pages/Venue';
 import Gallery from "./pages/Gallery"
 import Register from "./pages/Register"
 import Admin from "./pages/AdminPortal"
+import Login from './pages/Login';
+import ProtectedRoute from './ProtectedRoute';
+import { AuthProvider } from './context';
 
 
 function App() {
   return (
     <>
+    <AuthProvider>
       <Router>
             <Routes>
                 <Route path ="/" element={<Layout/>} >
@@ -21,13 +25,20 @@ function App() {
                     <Route path="/venue" element={<Venue />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/admin" element={<Admin />} />
+                    <Route path="/admin"  element={
+                      <ProtectedRoute>
+                        <Admin />
+                      </ProtectedRoute>
+                    } />
+                    <Route path="/login" element={<Login />} />
                   
                 </Route>
 
 
             </Routes>
         </Router>
+    </AuthProvider>
+      
     </>
   )
 }

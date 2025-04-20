@@ -1,5 +1,6 @@
 import { CalendarDays} from "lucide-react"
 import Banner from "../components/Banner"
+import { Link } from "react-router-dom"
 
 const Events = () => {
   return (
@@ -47,10 +48,12 @@ const Events = () => {
 
      
 
-
-        <button className="px-12 py-4 bg-[#0B3D2E] text-white rounded-md cursor-pointer hover:opacity-90 transition-opacity ">
-            Register For Event
-        </button>
+        <Link to="/register">
+           <button className="px-12 py-4 bg-[#0B3D2E] text-white rounded-md cursor-pointer hover:opacity-90 transition-opacity ">
+              Register For Event
+          </button>
+        </Link>
+       
       </section>
 
        <section className="py-16 bg-white my-16">

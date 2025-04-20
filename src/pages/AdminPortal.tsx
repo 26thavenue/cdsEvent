@@ -1,9 +1,7 @@
 import supabase from "../utils";
 import { useEffect, useState } from 'react';
 
-
 const AdminDashboard = () => {
-
   const [registrations, setRegistrations] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -30,42 +28,62 @@ const AdminDashboard = () => {
     fetchRegistrations();
   }, []);
 
-
-
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#0B3D2E]/90 text-white p-6">
+      <aside className="w-full md:w-64 bg-[#0B3D2E]/90 text-white p-6 hidden lg:block">
         <h2 className="text-2xl font-bold mb-6">Admin Panel</h2>
         <nav>
-          <ul className="space-y-4">
+          <ul className="space-y-4 ">
             <li className="font-semibold">Registered Delegates</li>
           </ul>
         </nav>
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-6 sm:p-10">
         <header className="mb-6">
           <h1 className="text-3xl font-bold text-gray-800">Delegates Overview</h1>
           <p className="text-gray-600">All registered participants</p>
         </header>
 
         {loading && <div>Loading ...</div>}
+        {error && <div className="border-l-4 border-red-600 p-4 bg-red-50 rounded-lg">{error}</div>}
 
-        {error && <div className="border-l-4 border-red-600 p-8 bg-red-50 rounded-lg">{error}</div>}
+        {/* Cards */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <div className="shadow bg-white rounded-lg w-full sm:w-[250px] h-[150px] p-4 flex flex-col justify-between">
+            <h1 className="text-lg font-bold">Number of Attendees</h1>
+            <h3 className="text-6xl font-bold text-center text-primary">{registrations.length}</h3>
+          </div>
 
-        <div className="overflow-auto">
-          <table className="min-w-full bg-white rounded-lg shadow">
+          <div className="shadow bg-white rounded-lg w-full sm:w-[250px] h-[150px] p-4 flex flex-col justify-between">
+            <h1 className="text-lg font-bold">Standard Delegates</h1>
+            <h3 className="text-6xl font-bold text-center text-primary">
+              {registrations.filter(r => r.delegation_type === 'Standard').length}
+            </h3>
+          </div>
+
+          <div className="shadow bg-white rounded-lg w-full sm:w-[250px] h-[150px] p-4 flex flex-col justify-between">
+            <h1 className="text-lg font-bold">Vendors</h1>
+            <h3 className="text-6xl font-bold text-center text-primary">
+              {registrations.filter(r => r.delegation_type === 'Vendor').length}
+            </h3>
+          </div>
+        </div>
+
+        {/* Table */}
+        <div className="overflow-auto rounded-lg shadow bg-white">
+          <table className="min-w-full text-sm">
             <thead className="bg-[#0B3D2E] text-white">
               <tr>
-                <th className="px-4 py-3 text-left text-sm font-medium">Name</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Email</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Phone</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Country</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Organization</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Position</th>
-                <th className="px-4 py-3 text-left text-sm font-medium">Delegation</th>
+                <th className="px-4 py-3 text-left font-medium">Name</th>
+                <th className="px-4 py-3 text-left font-medium">Email</th>
+                <th className="px-4 py-3 text-left font-medium">Phone</th>
+                <th className="px-4 py-3 text-left font-medium">Country</th>
+                <th className="px-4 py-3 text-left font-medium">Organization</th>
+                <th className="px-4 py-3 text-left font-medium">Position</th>
+                <th className="px-4 py-3 text-left font-medium">Delegation</th>
               </tr>
             </thead>
             <tbody>
