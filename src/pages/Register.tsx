@@ -40,8 +40,8 @@ const Register = () => {
           created_at: new Date().toISOString()
         }])
         .select();
-
       if (error) throw error;
+      console.log(error)
 
       console.log("Registration successful:", response);
       setFormSubmitted(true);
