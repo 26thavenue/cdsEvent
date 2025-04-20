@@ -11,6 +11,7 @@ import Admin from "./pages/AdminPortal"
 import Login from './pages/Login';
 import ProtectedRoute from './ProtectedRoute';
 import { AuthProvider } from './context';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                       </ProtectedRoute>
                     } />
                     <Route path="/login" element={<Login />} />
+                    <Route path="*" element={<NotFound />} />
                   
                 </Route>
 
