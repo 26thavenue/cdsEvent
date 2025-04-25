@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Toaster } from 'react-hot-toast';
 
 const Layout = () => {
     return (
@@ -8,8 +9,11 @@ const Layout = () => {
             <Navbar />
             <main className="flex-1 min-h-screen">
                 <Outlet /> 
+                 <Toaster position="top-right" reverseOrder={false} />
             </main>
+
             <Footer />
+            
         </div>
     );
 };

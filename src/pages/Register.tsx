@@ -5,7 +5,6 @@ import supabase from "../utils";
 const Register = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [delgeateOption, setDelegateOption] = useState<string>("");
-  // const [ setFormData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
@@ -19,12 +18,10 @@ const Register = () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    console.log("Form submission data:", data);
-    // setFormData(data);
 
     try {
       // Insert into Supabase
-      const { data: response, error } = await supabase
+      const { data: _, error } = await supabase
         .from('registrations')
         .insert([{
           first_name: data.firstName,
@@ -42,8 +39,6 @@ const Register = () => {
         .select();
       if (error) throw error;
       console.log(error)
-
-      console.log("Registration successful:", response);
       setFormSubmitted(true);
       
     } catch (err) {
@@ -52,10 +47,6 @@ const Register = () => {
     } finally {
       setLoading(false);
     }
-
-   
-    
-    
     
   };
 

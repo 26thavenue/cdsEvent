@@ -26,7 +26,7 @@ function App() {
                     <Route path="/venue" element={<Venue />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/admin"  element={
+                    <Route path="/host"  element={
                       <ProtectedRoute>
                         <Admin />
                       </ProtectedRoute>

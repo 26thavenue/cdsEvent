@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
  
     if (login(username, password)) {
-      navigate("/admin");
+      navigate("/host");
     } else {
       setError("Invalid credentials");
     }

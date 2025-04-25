@@ -16,7 +16,7 @@ const AuthContext = createContext<AuthContextType>({
 const userName = import.meta.env.VITE_CDSSUMMIT_USERNAME
 const cdsPassword = import.meta.env.VITE_SUPABASE_PASSWORD
 
-console.log(userName,cdsPassword)
+
 
 
 export function AuthProvider({ children }:any) {
