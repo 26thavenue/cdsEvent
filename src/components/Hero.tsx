@@ -1,18 +1,20 @@
 import { Calendar, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <div className="relative bg-primary py-20 md:py-32">
+    <div className="relative bg-primary min-h-[85dvh]">
       {/* Background pattern */}
-      <div className="absolute inset-0 z-0 opacity-10">
+      <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e')] bg-cover bg-center"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="container mx-auto px-6 relative z-10 flex flex-col min-h-[85dvh]">
+       <Navbar/>
+        <div className="flex-1 max-w-4xl mx-auto text-center flex flex-col items-center justify-center  h-full">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            African Chiefs of <span className="text-gold-light">Defense Staff</span> Summit
+            African Chiefs of <span className="text-gold-light">Defense Staff</span> 
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8">

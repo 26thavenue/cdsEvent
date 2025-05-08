@@ -48,9 +48,16 @@ const Index = () => {
       </section>
       
       {/* Key Information Section */}
-      <section className="py-24 bg-gray-100">
+      <section
+      style={{
+          backgroundImage: "url('/image2.png')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }} 
+      className="py-24 bg-gray-100">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-navy-dark mb-12 text-center">
+          <h2 className="text-3xl font-bold text-navy-dark mb-12 text-center text-white">
             Summit Information
           </h2>
           
@@ -96,7 +103,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-10 text-center">
+          <div className="mt-10 text-center text-white">
             <Link 
               to="/event" 
               className="inline-flex items-center text-navy-dark font-medium hover:text-navy transition-colors"

@@ -1,20 +1,31 @@
 import { CalendarDays} from "lucide-react"
 import Banner from "../components/Banner"
 import { Link } from "react-router-dom"
+import Navbar from "../components/Navbar"
 
 const Events = () => {
   return (
     <main className='mb-16 '>
 
-      <div className="bg-primary py-16 md:py-24 mb-16">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Event <span className="text-gold-light">Details</span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transcorp Hilton Hotel, Abuja, Nigeria
-          </p>
+      <div
+      style={{
+        backgroundImage: "url('/pattern2.png')",
+        backgroundRepeat: "repeat",
+        backgroundSize: "auto"
+      }} 
+      className="bg-primary  mb-16 min-h-[90dvh] flex flex-col items-center justify-center">
+        <Navbar/>
+        <div className="flex-1 flex items-center justify-center text-center px-6 container mx-auto">
+            <div className="container mx-auto px-6 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Event <span className="text-gold-light">Details</span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Transcorp Hilton Hotel, Abuja, Nigeria
+            </p>
+          </div>
         </div>
+        
       </div>
 
       <section className="px-8 lg:px-24">

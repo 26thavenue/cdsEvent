@@ -20,7 +20,6 @@ const Register = () => {
 
 
     try {
-      // Insert into Supabase
       const { data: _, error } = await supabase
         .from('registrations')
         .insert([{

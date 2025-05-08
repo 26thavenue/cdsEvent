@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { MapPin, Car, Plane } from "lucide-react";
 import Banner from '../components/Banner';
+import Navbar from '../components/Navbar';
 
 
 
@@ -63,12 +64,16 @@ const ImageSlider = () => {
 const Venue = () => {
   return (
     <main className=''>
-       <div className="bg-primary py-16 md:py-24 mb-16">
+      <div className="bg-primary">
+         <Navbar/>
+      </div>
+     
+       <div className=" py-16 md:py-24 mb-16">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-black mb-6">
             Event <span className="text-gold-light">Location</span>
           </h1>
-          <p className="text-l lg:text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-l lg:text-xl text-gray-700 max-w-3xl mx-auto">
             Transcorp Hilton Hotel, Abuja, Nigeria
           </p>
         </div>

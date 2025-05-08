@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -108,16 +109,34 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col">
       
       {/* Hero Section */}
-      <div className="bg-[#0B3D2E] py-16 md:py-24">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Summit <span className="text-gold-light">Gallery</span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Meet the Defense Staff Chiefs and explore summit preparations
-          </p>
-        </div>
-      </div>
+      <div
+        style={{
+          backgroundImage: "url('/Image.jpeg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }}
+        className="bg-[#0B3D2E] w-full min-h-[90dvh] mx-auto rounded flex flex-col"
+      >
+        
+  
+  <div className=" bg-black/30 ">
+    <Navbar />
+  </div>
+
+  {/* Centered content */}
+  <div className="flex-1 flex items-center justify-center text-center px-6 container mx-auto">
+    <div className="bg-black/10 p-4">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Summit <span className="text-gold-light">Gallery</span>
+      </h1>
+      <p className="text-xl text-gray-100 max-w-3xl mx-auto">
+        Meet the Defense Staff Chiefs and explore summit preparations
+      </p>
+    </div>
+  </div>
+</div>
+
       
       {/* Gallery Filter */}
       <section className="pt-10 pb-4 bg-white">
